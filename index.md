@@ -69,10 +69,10 @@ Current areas of exploration include:
 ## LINKED NETWORKS
 
 ### Main Control Hub
-- [Plebware Control Center](../plebware/)
+- [Plebware Control Center](https://plebware.github.io/Plebware/)
 
 ### Human Layer & Writing
-- [Otto Archive](../otto/)
+- [Otto Archive](https://plebware.github.io/otto.md/)
 
 ---
 
