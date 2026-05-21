@@ -1,4 +1,7 @@
 # PLEBMACHINE CORE
+---
+## 🌐 Plebware Links | ⚙️ [Plebware Control Center](https://plebware.github.io/Plebware/) | ✍️  [📚 Otto Archive](https://Plebware.github.io/otto.md/)
+---
 
 ## Modular Linux Desktop Orchestration
 
