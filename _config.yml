@@ -1,0 +1,8 @@
+# _config.yml for PlebMachine
+baseurl: "/PlebWaveFrontier"  # This is critical for project sites
+url: "https://plebware.github.io"
+
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: Plebware/pleb-theme
