@@ -1,5 +1,4 @@
-# _config.yml for PlebMachine
-baseurl: "/PlebWaveFrontier"  # This is critical for project sites
+baseurl: "/PlebMachine"
 url: "https://plebware.github.io"
 
 plugins:
