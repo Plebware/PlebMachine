@@ -74,7 +74,7 @@ Current areas of exploration include:
 ## LINKED NETWORKS
 
 ### Main Control Hub
-- [Plebware Control Center](https://plebware.github.io/Plebware/)
+- [Plebware Home Page](https://plebware.github.io/)
 
 ### Human Layer & Writing
 - [Otto Archive](https://plebware.github.io/otto.md/)
@@ -83,7 +83,7 @@ Current areas of exploration include:
 
 ## DEVELOPMENT APPROACH
 
-PlebMachine prioritizes:
+PlebMachine prioritises:
 
 - clarity
 - maintainability
