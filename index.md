@@ -7,6 +7,9 @@ title: PlebMachine Core
 
 ## Modular Linux Desktop Orchestration
 
+...
+
+
 PlebMachine is a Linux orchestration framework focused on modularity, recoverability, and practical desktop control.
 
 The project explores how lightweight Linux environments can become adaptive operational systems rather than static desktop sessions.
