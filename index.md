@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PlebMachine Core
----
+--- 
 
 # PLEBMACHINE CORE
 
