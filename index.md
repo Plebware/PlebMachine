@@ -7,48 +7,49 @@ title: PlebMachine Core
 
 ## Modular Linux Desktop Orchestration
 
-...
-
-
 PlebMachine is a Linux orchestration framework focused on modularity, recoverability, and practical desktop control.
 
 The project explores how lightweight Linux environments can become adaptive operational systems rather than static desktop sessions.
 
 Built primarily on:
 
-- MX Linux
-- XFCE
-- Bash scripting
-- Python utilities
-- State-driven workflows
+* MX Linux
+* XFCE
+* Bash scripting
+* Python utilities
+* State-driven workflows
 
 ---
 
 ## CORE OBJECTIVES
 
-### Lightweight Operation
+### 🔑 Lightweight Operation
+
 Maintain responsiveness on older and limited hardware.
 
-### Human-Focused Workflows
+### 🔑 Human-Focused Workflows
+
 Reduce friction between user intent and system behavior.
 
-### Modular Design
+### 🔑 Modular Design
+
 Separate system logic from user configuration.
 
-### Recoverability
+### 🔑 Recoverability
+
 Design systems that can fail gracefully and recover cleanly.
 
 ---
 
 ## ACTIVE COMPONENTS
 
-| Component | Function |
-|---|---|
-| Control Center | System orchestration |
-| Mode System | Workspace state management |
+| Component       | Function                     |
+| --------------- | ---------------------------- |
+| Control Center  | System orchestration         |
+| Mode System     | Workspace state management   |
 | Health Guardian | Runtime stability monitoring |
-| AI Tools | Experimental AI integration |
-| Launcher System | Dynamic application control |
+| AI Tools        | Experimental AI integration  |
+| Launcher System | Dynamic application control  |
 
 ---
 
@@ -56,31 +57,41 @@ Design systems that can fail gracefully and recover cleanly.
 
 Current areas of exploration include:
 
-- Workspace orchestration
-- Desktop state management
-- Lightweight automation
-- Adaptive Linux workflows
-- AI-assisted productivity environments
-- Multi-environment desktop integration
+* Workspace orchestration
+* Desktop state management
+* Lightweight automation
+* Adaptive Linux workflows
+* AI-assisted productivity environments
+* Multi-environment desktop integration
 
 ---
 
-## DOCUMENTATION ACCESS
+## DOCUMENTATION
 
-- [Architecture](architecture.md)
-- [Workflow Design](workflow.md)
-- [Module System](modules.md)
-- [Development Notes](devlogs.md)
+The PlebMachine documentation currently covers:
+
+* Architecture Design
+* Workflow Engineering
+* Module Systems
+* Development Logs
+* Runtime Operations
+* Mode Management
+* System Recovery Procedures
 
 ---
 
-## LINKED NETWORKS
+## PROJECT ECOSYSTEM
 
-### Main Control Hub
-- [Plebware Home Page](https://plebware.github.io/)
+PlebMachine exists as part of a broader publishing and education ecosystem that combines:
 
-### Human Layer & Writing
-- [Otto Archive](https://plebware.github.io/otto.md/)
+* Linux education
+* AI-assisted workflows
+* Technical writing
+* Research publishing
+* Digital creativity
+* Lifelong learning
+
+The platform serves as both a practical desktop framework and a living laboratory for experimentation, documentation, and continuous improvement.
 
 ---
 
@@ -88,15 +99,26 @@ Current areas of exploration include:
 
 PlebMachine prioritises:
 
-- clarity
-- maintainability
-- low resource consumption
-- transparency
-- operational stability
+* Clarity
+* Maintainability
+* Low resource consumption
+* Transparency
+* Operational stability
 
 The project intentionally avoids unnecessary complexity and bloated dependency chains wherever possible.
 
 ---
 
+## DESIGN PHILOSOPHY
+
+The system is built around a simple principle:
+
+> The computer should adapt to the user, not force the user to adapt to the computer.
+
+By combining modular architecture, state-driven operation, and lightweight tooling, PlebMachine seeks to provide a stable and efficient desktop experience that remains understandable, maintainable, and recoverable.
+
+---
+
 ### PlebMachine Core
-State-Driven Linux Engineering
+
+**State-Driven Linux Engineering**
