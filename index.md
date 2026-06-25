@@ -3,6 +3,10 @@ layout: default
 title: PlebMachine Core
 --- 
 
+{% include dashboard.html %}
+
+----
+
 # PLEBMACHINE CORE
 
 ## Modular Linux Desktop Orchestration
