@@ -1,78 +1,148 @@
-# 🚨 PlebMachine 1.0.0 — DO NOT DOWNLOAD
+# 🔑 PlebMachine 1.30.08.26
 
-**RELEASE STATUS: WITHDRAWN FOR INVESTIGATION — 2026-08-27**
-
-> ⚠️ **IMPORTANT: Please do not download or install PlebMachine 1.0.0 until further notice.**
->
-> A fresh-user installation test has uncovered a **critical release bug** affecting the PlebMachine desktop orchestration system. **Mission Control does not initialise correctly, and the expected 12-workspace environment is not being established as intended.**
->
-> The published `plebmachine_1.0.0_amd64.deb` package should therefore be considered **faulty and withdrawn** while the problem is investigated.
-
-## What Happened?
-
-PlebMachine 1.0.0 was released before sufficient clean-user installation testing had been completed.
-
-During subsequent testing, we discovered that:
-
-- **PlebMachine User Setup** works.
-- **PlebMachine Tools** works.
-- **PlebMachine Mission Control** does not initialise correctly.
-- The expected **12-workspace environment** is not established correctly.
-- The complete desktop orchestration system therefore cannot currently be considered reliable.
-
-This is a **critical release bug**, and we are treating it seriously.
-
-## What Should You Do?
-
-**Do not download or install PlebMachine 1.0.0 until further notice.**
-
-If you have already installed version 1.0.0, please do not rely on it as a production system. We are investigating the failure and will provide a corrected release when clean-user testing confirms that the complete system is functioning correctly.
-
-## We Apologise.
-
-PlebMachine 1.0.0 was published too soon. That is our mistake.
-
-We would rather be completely open about the failure than allow people to install a system that does not perform as advertised.
-
-The project is not abandoned.
-
-**The workshop is open. The bug has been found. Now we fix the machine.**
-
----
-
-# PlebMachine Development Status
+**RELEASE STATUS: TESTED DEVELOPMENT RELEASE — 2026-08-31**
 
 PlebMachine is a state-driven Linux desktop orchestration system designed to provide structured working environments through modes, application launching, desktop configuration, wallpapers, and system-state management.
 
-The project remains under active development and testing.
+Version **1.30.08.26** is the current development release and has now passed a significant cross-distribution installation test.
 
-The previous development-status material below is retained as historical information; it should not be interpreted as the current release status.
+## 🔑 1.30.08.26 — Major Test Milestone
+
+The `plebmachine_1.30.08.26_amd64.deb` package was installed successfully on:
+
+- **MX Linux 25.2**, Xfce.
+- **SparkyLinux 8.4 (Seven-Sisters)**, Xfce, based on Debian 13 Trixie.
+
+On SparkyLinux, the package installed **without manual intervention** and PlebMachine worked immediately after installation.
+
+This is an important portability milestone: PlebMachine is no longer being tested only against its original MX Linux development environment.
+
+## What Has Been Tested
+
+The current package has been exercised through the PlebMachine desktop environment, including its core control and state-management components.
+
+The SparkyLinux test demonstrated that the Debian package can be installed on a separate Debian/Xfce distribution and operate without requiring an MX-specific installation procedure.
+
+Further testing of individual modes, supporting applications, and long-term stability remains part of development.
+
+## 🧠 What Is PlebMachine?
+
+PlebMachine is a **Linux desktop orchestration layer**. It does not attempt to replace the desktop environment. Instead, it works with the desktop to establish controlled working states around the user's tasks.
+
+The project is built around:
+
+- **State-driven operation.**
+- **Modular components.**
+- **Separation of system logic and user configuration.**
+- **Recoverability and restoration of the user's original desktop state.**
+- **Practical operation on lightweight Linux systems.**
+
+## 🖥️ Cognitive Modes
+
+PlebMachine is designed around task-oriented desktop modes, including:
+
+- Everyday.
+- Author.
+- Study.
+- Research.
+- Graphics.
+- Music.
+- Video.
+- Broadcast.
+- AI Helpers.
+- Developer.
+- Accounting.
+- Leisure.
+
+The intention is simple: instead of forcing the user to manually prepare the desktop for every kind of work, PlebMachine prepares a controlled environment appropriate to the selected mode.
+
+## ⚙️ Core Components
+
+The current PlebMachine system includes components such as:
+
+- **PlebMachine Mission Control** — central desktop orchestration.
+- **PlebMachine Tools** — supporting configuration and maintenance tools.
+- **PlebMachine User Setup** — user-oriented setup functions.
+- **PlebMachine Gizmo** — application launching and mode selection.
+- **Workspace orchestration** — controlled PlebMachine workspace environments.
+- **Wallpaper and desktop-state management.**
+
+## 🔐 User State Matters
+
+One of the central design principles of PlebMachine is that the user's original desktop configuration must not simply be destroyed when PlebMachine takes control.
+
+PlebMachine is intended to establish a **temporary controlled desktop state**, while preserving the user's original state underneath it.
+
+When PlebMachine is switched OFF, the original desktop configuration should be restored.
+
+This state-driven approach is fundamental to the project's architecture.
+
+## 🧪 Testing Philosophy
+
+PlebMachine is deliberately being tested on more than one Linux distribution.
+
+The current development testing includes:
+
+| Platform | Result |
+| --- | --- |
+| MX Linux 25.2 Xfce | Tested |
+| SparkyLinux 8.4 Xfce | **Installed and working immediately** |
+
+The SparkyLinux result is particularly useful because it provides an independent Debian/Xfce environment rather than another installation of the same distribution.
+
+## 📦 Installation
+
+The primary distribution package is:
+
+```text
+plebmachine_1.30.08.26_amd64.deb
+```
+
+Install the Debian package using your distribution's normal package-management tools.
+
+The package is intended for **64-bit Debian-family Linux systems with Xfce**. Compatibility with other desktop environments and distributions remains subject to testing.
+
+## ⚠️ Development Status
+
+PlebMachine 1.30.08.26 is a **development/testing release**.
+
+The successful MX Linux and SparkyLinux tests are encouraging, but the project remains under active development. Supporting applications such as GIMP, Logseq, LibreOffice, browsers, and other mode-specific software are installed separately and are not automatically considered part of the PlebMachine core.
+
+Users testing the system should report problems, unexpected behaviour, or distribution-specific issues so that they can be investigated before a future stable release.
+
+## 🔧 Development Direction
+
+Current development priorities include:
+
+- Cross-distribution testing.
+- Clean-user installation testing.
+- Workspace state preservation and restoration.
+- Reliable mode transitions.
+- Application-launch integration.
+- Improved dependency handling.
+- Clear separation between PlebMachine core and optional supporting applications.
+- Continued testing on older and resource-limited hardware.
+
+## 🛠️ Project Philosophy
+
+PlebMachine follows a simple principle:
+
+> **The computer should adapt to the user, not force the user to adapt to the computer.**
+
+The project is intentionally being developed as a practical, understandable, and recoverable desktop layer rather than a collection of opaque automation tricks.
+
+## 📚 Release Documentation
+
+Detailed release notes for version 1.30.08.26 are available in:
+
+`releases/1.30.08.26.md`
+
+## Previous 1.0.0 Release
+
+PlebMachine 1.0.0 was withdrawn after clean-user testing exposed a critical Mission Control and workspace-initialisation failure. That release should **not** be used.
+
+Version 1.30.08.26 represents the subsequent development and testing work and should be treated as the current development package.
 
 ---
 
-## ⚙️ Historical Core Foundation
-
-- Mode system concept defined.
-- Initial CLI structure established.
-- Basic mode switching logic implemented.
-- Core directory structure designed for modular expansion.
-- State-handling concepts introduced.
-
----
-
-## 🧠 System Direction
-
-PlebMachine is evolving into a **state-driven Linux productivity layer**, designed to:
-
-- Separate system logic from user intent.
-- Enable structured modes of operation.
-- Provide predictable workflow environments.
-- Act as a modular control layer over the desktop.
-
----
-
-## 🔧 Current Development Priority
-
-The immediate priority is **clean-user installation testing and correction of the Mission Control/workspace initialisation failure**.
-
-A new release will only be announced after the corrected system has been properly tested.
+**Plebware — The workshop is open.**
